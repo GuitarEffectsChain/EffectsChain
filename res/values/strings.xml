@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EffectsChain</string>
+    <string name="hello_world">Hello world!</string>
+    
+    
+    <!-- Lista menu Drawer -->
+	<string-array name = "nav_options">
+	    <item> Home </item>
+	    <item> Presets </item>
+	    <item> Efectos </item>
+	    <item> Exportar/Importar </item>
+	    <item> Opciones </item>	   
+	    <item> Acerca de </item> 
+	</string-array>
+	
+	<!-- Lista menu Drawer (imagenes) -->
+	<string-array name = "nav_options_imgs">
+	    <item> @drawable/ic_launcher_nav </item>
+	    <item> @drawable/ic_action_star </item>
+	    <item> @drawable/ic_action_storage</item>
+		<item> @drawable/ic_action_upload</item> 
+	    <item> @drawable/ic_action_settings </item>	  
+	    <item> @drawable/ic_action_about </item>  
+	</string-array>
+	
+	<!-- Lista effects -->
+	<string-array name = "list_effects">
+	    <item> Amplificador </item>
+	    <item> Compressor </item>
+	    <item> Reverb </item>
+	    <item> Delay </item>	    
+	</string-array>
+	
+		<!-- Lista descripcion effects -->
+	<string-array name = "list_desc_effects">
+	    <item> Dentro del módulo definido como amp se pretende simular un amplificador de guitarra clásico, 
+	        por lo que no se trata de un solo efecto, sino de un conjunto de ellos. Entre ellos se encuentran los controles de ganancia
+	        y volumen que nos permitrian saturar la señal, un ecualizador de tres bandas (graves, medios y agudos) y el canal, el cual nos 
+	        permitira seleccionar tipo de sonido, en terminos de distorsion de la señal. </item>
+	   	    
+	    <item> Un compresor se trata de un procesador de dinámica, que como bien indica su nombre, 
+	        comprime el rango dinámico de la señal de entrada. El rango dinámico de una señal es la diferencia 
+	        que hay entre el valor de amplitud más elevado o nivel de pico y el nivel de ruido de fondo del sistema. 
+	        El compresor controla el nivel de pico de la señal, y en caso de que supere un determinado límite o threshold, 
+	        reduce la ganancia de ésta un cierto nivel o ratio. </item>
+	    
+	    <item>  La reverberación es el sonido que se refleja dentro de un espacio cerrado,
+	         y que permanece después de que la fuente emisora haya dejado de emitirlo. El efecto de reverberación es uno
+	          de los más utilizados dentro del mundo del audio, ya que nos permite simular las características acústicas
+	           de un espacio determinado y aplicárselas a nuestra señal. De esta forma podemos añadir realismo a nuestras 
+	           pistas de audio a la vez que podemos situarlas en el espacio, dotándolas de más o menos profundidad.  </item>
+	    
+	    <item> Existen diversos tipos de delay, podemos encontrar desde un delay simple hasta efectos de delay más complejos como el feedback delay, 
+	        el multitap delay o el stereo delay.  
+			Todos los tipos de delay, se basan en la idea del delay simple, el cual coge un fragmento de la señal de entrada, 
+			le aplica un retardo y suma este fragmento retardado a la señal original. Además del retardo, se le aplica una ganancia determinada 
+			(típicamente menor a 1) al fragmento retardado, creando así un efecto similar al de un eco.  </item>	    
+	</string-array>
+	
+</resources>

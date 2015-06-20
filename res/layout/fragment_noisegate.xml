@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+                 
+    
+	<TextView 
+    android:id="@+id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="   DELAY"
+    android:textColor="@android:color/white"
+    android:background="@android:color/background_dark"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:layout_marginBottom="6dp"/>
+    
+		<ToggleButton 
+	    android:id="@+id/toggle_ns"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textOn="On"
+	    android:textOff="Off"
+	    android:layout_alignParentRight="true"/>
+	
+	
+	</RelativeLayout>
+	
+		<RelativeLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp">
+	
+	<TextView 
+    android:id="@+id/text_Threshold_noise"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:text="Time"/>
+	
+	<TextView 
+    android:id="@+id/value_Threshold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_alignParentRight="true"
+    android:text="0%"/>
+	
+	</RelativeLayout>
+	
+	<SeekBar 
+	    android:id="@+id/seekThreshold_noise"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    android:thumb="@drawable/yellow_scrubber_control"
+	    android:progressDrawable="@drawable/yellow_scrubber_progress"/>
+	
+		<RelativeLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp">
+	
+	<TextView 
+    android:id="@+id/text_Attack_noise"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:text="Feedback"/>
+	
+	<TextView 
+    android:id="@+id/value_attack_noise"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:textStyle="bold"
+    android:text="0%"/>
+	
+	</RelativeLayout>
+	
+	<SeekBar 
+	    android:id="@+id/seekAttack_noise"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    android:thumb="@drawable/yellow_scrubber_control"
+	    android:progressDrawable="@drawable/yellow_scrubber_progress"/>
+	
+	
+		<RelativeLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp">
+	
+	<TextView 
+    android:id="@+id/text_mix_noise"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:text="Mix"/>
+	
+	<TextView 
+    android:id="@+id/value_mix_noise"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:textStyle="bold"
+    android:text="0%"/>
+	
+	</RelativeLayout>
+	
+	<SeekBar 
+	    android:id="@+id/seekMix_noise"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    android:thumb="@drawable/yellow_scrubber_control"
+	    android:progressDrawable="@drawable/yellow_scrubber_progress"/>
+</LinearLayout>

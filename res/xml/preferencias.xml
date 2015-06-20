@@ -1,0 +1,24 @@
+<PreferenceScreen
+    android:title="Opciones"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Configuracion Envio de Datos">
+        <CheckBoxPreference
+            android:key="sentDrag"
+            android:title="Enviar al arrastrar"
+            android:summary="Se envia cada vez que se arrastra un fader (y no al soltarlo)" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Mensajes de alerta">
+        <CheckBoxPreference
+            android:key="noDialConect"
+            android:title="Inhabilitar mensajes error de conexion"
+            android:summary="Deja de mostrar el mensaje el cual te avisa que no estas conectado" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Importado de presets">
+        <CheckBoxPreference
+            android:key="loadPresetImport"
+            android:title="Cargar preset al importar"
+            android:summary="Muestra la pantalla principal al importar un preset" />
+    </PreferenceCategory>
+</PreferenceScreen>

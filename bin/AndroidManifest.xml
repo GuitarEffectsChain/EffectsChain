@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.carlosromero.pfg.effectschain"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash_Activity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.carlosromero.pfg.effectschain.TutoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name=".Conectivity"
+            android:label="Datos para la conexión"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog"
+            android:screenOrientation="portrait"/>    
+        <activity 
+            android:name=".InsertPreset"
+            android:label="Añadir nuevo preset"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name=".ImportActivity"
+            android:theme="@android:style/Theme.DeviceDefault"
+            android:label="Añadir preset desde archivo"
+            android:screenOrientation="portrait"/>
+        <activity 
+            android:name=".ExportActivity"
+            android:theme="@android:style/Theme.DeviceDefault"
+            android:label="Crear archivo preset"
+            android:screenOrientation="portrait"/>
+    </application>
+    
+
+</manifest>

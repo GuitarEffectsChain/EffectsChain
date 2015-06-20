@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp" >
+
+    <TextView 
+        android:id="@+id/label_ip"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+            
+     <EditText 
+        android:id="@+id/editIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        />
+        
+    <TextView 
+        android:id="@+id/label_port"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puerto"
+        android:paddingTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+            
+     <EditText 
+        android:id="@+id/editPort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        />
+        
+    
+	<Button 
+      android:id="@+id/btn_conectivity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Aceptar"/>
+
+</LinearLayout>

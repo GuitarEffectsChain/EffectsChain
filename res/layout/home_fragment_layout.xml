@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+           
+     <TextView 
+        android:id="@+id/namePreset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+       />
+
+    <HorizontalScrollView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"       >
+        
+    <LinearLayout 
+        android:id="@+id/scrollHor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+   
+     <ImageButton 
+         android:id="@+id/btn_effect1"
+         android:layout_height="150dp"
+         android:layout_width="100dp"
+         android:text="Efecto1"
+         android:src="@drawable/pedal_amp"
+         android:scaleType="fitXY"
+         android:background="@android:color/transparent"
+         android:layout_marginBottom="30dp"/>
+   
+     <ImageButton 
+         android:id="@+id/btn_effect2"
+         android:layout_height="150dp"
+         android:layout_width="100dp"
+         android:text="Efecto2"
+         android:src="@drawable/pedal_comp"
+         android:scaleType="fitXY"
+         android:background="@android:color/transparent"/>
+   
+     <ImageButton 
+         android:id="@+id/btn_effect3"
+         android:layout_height="150dp"
+         android:layout_width="100dp"
+         android:text="Efecto3"
+         android:src="@drawable/pedal_delay"
+         android:scaleType="fitXY"
+         android:background="@android:color/transparent"/>
+     
+   
+     <ImageButton 
+         android:id="@+id/btn_effect4"
+         android:layout_height="150dp"
+         android:layout_width="100dp"
+         android:text="Efecto4"
+         android:src="@drawable/pedal_reverb"
+         android:scaleType="fitXY"
+         android:background="@android:color/transparent"/>
+          
+    
+    </LinearLayout>
+	
+
+    </HorizontalScrollView>
+    
+    <FrameLayout
+        android:id="@+id/content_frame_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"/>
+    
+    <Button 
+        android:id="@+id/btn_connect"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Conectar"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_action_import_export"
+        android:background="@android:color/transparent"/>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+     
+     <TextView 
+            android:id="@+id/textConect"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="Desconectado"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/holo_red_dark"
+            android:gravity="center"/>
+        
+    </LinearLayout>
+</LinearLayout>

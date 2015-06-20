@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+   <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+   <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+              
+	<TextView 
+    android:id="@+id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="   AMPLIFICADOR"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:layout_marginBottom="6dp"
+    android:layout_alignParentLeft="true"
+    android:background="@android:color/background_dark"
+    android:textColor="@android:color/white"/>
+              
+   </RelativeLayout>
+	
+	<RelativeLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp">
+	    
+	<TextView 
+    android:id="@+id/text_Vol"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Drive"
+    android:textStyle="bold"/>
+		
+	<TextView 
+    android:id="@+id/value_Vol"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:textStyle="bold"
+    android:text="0%"/>
+		    
+	</RelativeLayout>
+	
+	<SeekBar 
+	    android:id="@+id/seekVol"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    android:thumb="@drawable/yellow_scrubber_control"
+	    android:progressDrawable="@drawable/yellow_scrubber_progress"	 />
+    
+	
+	<RelativeLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp">
+	
+	<TextView 
+    android:id="@+id/text_Bass"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:text="Bass"/>
+	
+	<TextView 
+    android:id="@+id/value_Bass"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"    
+    android:layout_alignParentRight="true"
+    android:textStyle="bold"
+    android:text="0%"/>
+	
+	</RelativeLayout>
+	
+	<SeekBar 
+	    android:id="@+id/seekBass"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"	
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp" 
+	    android:thumb="@drawable/yellow_scrubber_control"
+	    android:progressDrawable="@drawable/yellow_scrubber_progress"/>
+	
+	
+	<RelativeLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp">
+
+	<TextView 
+    android:id="@+id/text_Mid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:text="Mid"/>
+	
+	<TextView 
+    android:id="@+id/value_Mid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:textStyle="bold"
+    android:text="0%"/>
+	</RelativeLayout>
+	
+	<SeekBar 
+	    android:id="@+id/seekMid"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    android:thumb="@drawable/yellow_scrubber_control"
+	    android:progressDrawable="@drawable/yellow_scrubber_progress"	 />
+	
+	
+	<RelativeLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp">
+	
+	<TextView 
+    android:id="@+id/text_Treble"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:text="Treble"/>
+	
+	<TextView 
+    android:id="@+id/value_Treble"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:textStyle="bold"
+    android:text="0%"/>
+	
+	</RelativeLayout>
+	
+	<SeekBar 
+	    android:id="@+id/seekTreble"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    android:thumb="@drawable/yellow_scrubber_control"
+	    android:progressDrawable="@drawable/yellow_scrubber_progress"/>
+	
+		<RelativeLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp">
+	
+	<TextView 
+    android:id="@+id/text_Volume"
+    android:layout_width="wrap_content"
+    android:textStyle="bold"
+    android:layout_height="wrap_content"
+    android:text="Volume"/>
+	
+	<TextView 
+    android:id="@+id/value_Volume"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_alignParentRight="true"
+    android:text="0%"/>
+	
+	</RelativeLayout>
+	
+	<SeekBar 
+	    android:id="@+id/seekValume"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    android:thumb="@drawable/yellow_scrubber_control"
+	    android:progressDrawable="@drawable/yellow_scrubber_progress"/>	
+	    
+	<TextView 
+    android:id="@+id/text_channel"
+    android:layout_width="wrap_content"
+    android:textStyle="bold"
+    android:layout_height="wrap_content"
+	android:layout_marginLeft="25dp"
+	android:layout_marginRight="25dp"
+    android:text="Canal"/>
+	
+	<Spinner 
+	    android:id="@+id/spinner_channel_amp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    />
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="30dp"></LinearLayout>
+</LinearLayout>
+</ScrollView>

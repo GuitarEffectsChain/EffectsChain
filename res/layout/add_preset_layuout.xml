@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_insertpres"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:background="@android:color/transparent" >
+    
+    <TextView 
+        android:id="@+id/lbl_insertpreset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del preset"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"/>
+    
+    <EditText 
+        android:id="@+id/edit_name_preset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        />
+    
+    <Button 
+        android:id="@+id/btn_add_name_preset"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Aceptar"
+        />
+
+</LinearLayout>
